@@ -1,0 +1,35 @@
+<section class="second-section">
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-md-8">
+
+				<h2><a href="blog/it-news/">Новости IT</a></h2>
+
+				<div class="row news-wrap">
+
+{% for post in site.categories.it-news limit: 4 offset: 0 %}
+{% include /home-second-section-item.html %}
+{% endfor %}
+
+				</div>
+
+			</div>
+
+			<div class="col-md-4 home-aside">
+
+				<div class="aside-box">
+					{% include /ad-type-2.html %}
+				</div>
+
+				<div class="aside-box">
+{% include /vk-witget.html %}
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+</section>

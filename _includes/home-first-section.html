@@ -1,0 +1,21 @@
+<section class="first-section clearfix">
+	<div class="container-fluid">
+
+		<div class="ad top-ad">
+{% include /ad-type-1.html %}
+		</div>
+
+		<div class="row no-gutters">
+
+{% for post in site.categories.electronics limit: 2 offset: 0 %}
+{% include /home-first-section-item-1.html %}
+{% endfor %}
+
+{% for post in site.categories.electronics limit: 3 offset: 2 %}
+{% include /home-first-section-item-2.html %}
+{% endfor %}
+
+		</div>
+
+	</div>
+</section>

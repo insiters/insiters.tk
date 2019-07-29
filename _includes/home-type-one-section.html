@@ -1,0 +1,23 @@
+<section class="type-one">
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-sm-12">
+				<h2 class="type-one-header"><a href="blog/diy/">DIY</a></h2>
+			</div>
+
+{% for post in site.categories.diy limit: 1 offset: 0 %}
+{% include /home-type-one-section-item-1.html %}
+{% endfor %}
+
+			<div class="col-md-5 item-title-white">
+
+{% for post in site.categories.diy limit: 2 offset: 1 %}
+{% include /home-type-one-section-item-2.html %}
+{% endfor %}
+
+			</div>
+
+		</div>
+	</div>
+</section>

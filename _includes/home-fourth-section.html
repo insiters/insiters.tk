@@ -1,0 +1,31 @@
+<section class="fourth-section">
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-sm-12">
+				<h2 class="fourth-section-header"><a href="blog/lifehacks/">Лайфхаки</a></h2>
+			</div>
+
+			<div class="col-md-8 col-sm-6">
+				
+				<div class="row no-gutters">
+
+{% for post in site.categories.lifehacks limit: 4 offset: 0 %}
+{% include /home-fourth-section-item.html %}
+{% endfor %}
+
+				</div>
+
+			</div>
+
+			<div class="col-md-4 col-sm-6">
+
+				<div class="aside-box">
+{% include /ad-type-3.html %}
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</section>
